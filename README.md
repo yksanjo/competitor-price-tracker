@@ -1,82 +1,84 @@
-# PriceWatch 💵
+# competitor-price-tracker
 
-> **Competitor Price Tracker** - Track competitor pricing changes and get alerts when prices change. Perfect for e-commerce and SaaS businesses.
+## Detailed Description
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Active](https://img.shields.io/badge/status-active-success.svg)](https://github.com/yksanjo/PriceWatch)
-[![GitHub stars](https://img.shields.io/github/stars/yksanjo/PriceWatch?style=social)](https://github.com/yksanjo/PriceWatch)
+competitor-price-tracker is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
 
-**PriceWatch** monitors your competitors' pricing and alerts you when prices change. Stay competitive with real-time price tracking, historical data, and trend analysis.
+## Problem Statement
 
-## Features
+Describe the user or business problem this project solves, the target users, and expected outcomes.
 
-- 💰 Price change tracking
-- 🔔 Email/Slack notifications
-- 📊 Price history charts
-- 🎯 Multiple competitor tracking
-- ⏰ Scheduled price checks
-- 📈 Price trend analysis
+## Solution Overview
 
-## Installation
+Summarize the architecture, core modules, and runtime behavior at a high level.
 
-```bash
-pip install -r requirements.txt
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
 ```
 
-## Configuration
+## Getting Started
 
-Create a `.env` file:
+### Prerequisites
 
-```env
-# Notification Settings
-SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/WEBHOOK/URL
-EMAIL_TO=your-email@example.com
+- Git
+- Project runtime/toolchain for this repo
 
-# Check Settings
-CHECK_INTERVAL=3600  # Check every hour
+### Local Setup
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt  # or: pip install -e .[dev]
+pytest
 ```
 
 ## Usage
 
-### Add Competitor Product
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-```bash
-python tracker.py --add "Product Name" --url https://competitor.com/product --selector ".price"
-```
+## Quality Standards
 
-### Check Prices Once
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```bash
-python tracker.py --check
-```
+## Security
 
-### List Tracked Products
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-```bash
-python tracker.py --list
-```
+## Contributing
 
-### Start Continuous Monitoring
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
 
-```bash
-python tracker.py --watch
-```
+## Roadmap
 
-### View Price History
+Track upcoming milestones, technical debt, and planned feature work.
 
-```bash
-python tracker.py --history "Product Name"
-```
+## Support
 
-## Supported Sites
-
-- Any website with price information
-- Custom CSS selectors for price extraction
-- Supports JavaScript-rendered prices (with Selenium)
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
 
 ## License
 
-MIT License
-
-
+This project is released under the MIT License.
