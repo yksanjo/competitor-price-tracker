@@ -1,5 +1,12 @@
 # competitor-price-tracker
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/competitor-price-tracker/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/competitor-price-tracker/actions)
+![License](https://img.shields.io/github/license/yksanjo/competitor-price-tracker)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/competitor-price-tracker)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/competitor-price-tracker)
+
 ## Detailed Description
 
 competitor-price-tracker is maintained as an industry-grade software project with production-ready engineering practices.  
